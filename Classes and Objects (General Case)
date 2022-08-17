@@ -1,0 +1,26 @@
+#general case
+#In this, the print statement is customized by the coder and cannot be modified by the user
+#BY: SHARMILA.V_SIST
+class Solarsystem:
+    def __init__(self,planetname,distance,mass,satellite,moons,nature):
+        self.planetname = planetname
+        self.distance = distance
+        self.mass = mass
+        self.satellite = satellite
+        self.moons = moons
+        self.nature = nature
+    def features(self):
+        planet = f"Planet Name:{self.planetname}\nDiastance:{self.distance}\nMass:{self.mass}\
+        \nFamousSatellite:{self.satellite}\nMoons:{self.moons}\nNature of the Planet:{self.nature}"
+        return planet
+planet1 = Solarsystem('Mercury','0.387AU','3.285x10^23 kg','Messenger','no moons','Solid and smallest planet of our SolarSystem')
+planet2 = Solarsystem('Venus','0.722AU','4.867x10^24 kg','Mariner-10','no moons','Solid and the hottest planet also called as Earth twin and The morning star')
+planet3 = Solarsystem('Earth','1AU','5.97x10^24 kg','There are numerous satellites that are orbitting the Earth','The Moon','The only planet that supports life')
+planet4 = Solarsystem('Mars','1.52AU','6.39x10^23 kg','Mangalyaan','Phobos and Deimos','Red planet and the planet which humans will colonize in future ')
+planet5 = Solarsystem('Jupiter','5.2AU','1.89X10^27 kg','Voyager 1','It has 79 moons in which Europa is the largest','The largest planet in our Solar system and Gaseous giant')
+planet6 = Solarsystem('Saturn','9.58AU','5.6x10^26 kg','Cassini','It has 82 moons in which titan is the largest','Gaseous and well known for its beautiful rings')
+planet7 = Solarsystem('Uranus','19.2AU','8.6x10^25 kg','Voyager 2','It has 27 moons','Gaseous methane filled and rolls in its orbit')
+planet8 = Solarsystem('Neptune','30.1AU','1.24x10^26 kg','Voyager 2','It has 14 moons','Blue gaseous planet and the coldest in our Solar system')
+
+print(planet1.features())
+print(planet5.features())
